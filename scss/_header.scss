@@ -1,0 +1,175 @@
+
+header {
+    text-align: center;
+
+    width: 100%;
+    height: 1680px;
+
+    margin-bottom: 10rem;
+
+    background-image: url("/assets/images/header/header_bg.png");
+    background-size: cover;
+    font-weight: 400;
+    color: var(--light-color);
+
+    position: relative;
+
+    .header--container {
+        position: relative;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        font-family: "OswaldRegular";
+        font-size: 2rem;
+        color: var(--light-color);
+        text-transform: uppercase;
+    }
+
+    .header__title {
+        margin-top: 10rem;
+
+        font-family: "CormorantLight";
+        font-size: 24rem;
+        text-transform: uppercase;
+        line-height: 20rem;
+        letter-spacing: 4rem;
+
+    }
+
+    .header__subtitle {
+        margin: 5rem 0;
+
+        font-size: 2rem;
+
+    }
+
+
+
+    .header__hovered {
+        color: var(--burgundy-color);
+        transition: background 0.5s;
+    }
+    .logo {
+        margin-right: 9rem;
+    }
+
+    .nav__link {
+        margin-right: 5rem;
+        position: relative;
+    }
+
+    .nav__link:hover {
+        color: var(--mint-color);
+        cursor: pointer;
+    }
+
+
+    .nav__link:hover::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 2px;
+
+        background-color: var(--mint-color);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .fa-magnifying-glass {
+        margin-right: 10px;
+    }
+
+    .header__contacts {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--light-color);
+
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        z-index: 1;
+
+        .socials__links--header {
+            flex-direction: column;
+            align-self: flex-end;
+
+            margin-bottom: 18.4rem;
+            padding: 1rem;
+
+            background-color: rgba(22, 19, 26, 0.8);
+            border-radius: 2rem;
+            box-shadow: 0 7px 5px #0e0e16;
+
+
+        }
+
+
+
+        .contacs__links {
+           text-align: right;
+
+
+            .phone_number {
+                letter-spacing: 0.2rem;
+
+            }
+
+            .order_call {
+                display: inline-block;
+                letter-spacing: 0.25rem;
+
+                margin: 1.4rem 0 3rem;
+                padding: 2rem 1rem;
+
+                background-color: rgba(22, 19, 26, 0.8);
+                backdrop-filter: blur(5px);
+                border-radius: 2rem;
+
+                text-align: center;
+            }
+
+
+
+            .basket {
+                display: inline-block;
+                padding: 2rem;
+
+                background-color: rgba(22, 19, 26, 0.8);
+                backdrop-filter: blur(5px);
+                border-radius: 2rem;
+            }
+
+            .goods_counter {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 20px;
+                height: 20px;
+
+                padding: 0.5rem;
+
+                background-color: var(--mint-color);
+                border-radius: 50%;
+
+                font-size: 1.2rem;
+                color: var(--black-color);
+                position: absolute;
+                top: 1.2rem;
+                right: 0.6rem;
+                z-index: 1;
+            }
+        }
+    }
+
+
+}

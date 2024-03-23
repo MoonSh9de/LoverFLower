@@ -1,0 +1,124 @@
+footer {
+    .socials {
+        position: relative;
+
+        .container--socials {
+            display: flex;
+            justify-content: space-between;
+
+
+            .socials__item {
+                display: flex;
+                justify-content: space-between;
+
+                .socials__img {
+                    width: 180px;
+                    height: 180px;
+                }
+                .socials__links--footer {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+
+                    .social__link--footer {
+                        width: 40px;
+                        height: 40px;
+
+                        margin: 0 3rem 0 0;
+
+                        .socials__links--img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .social__link--footer:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+            .socials__item:first-of-type {
+                flex-basis: 65%;
+
+                margin-top: 8.8rem;
+            }
+            .socials__item:last-of-type {
+                flex-direction: column;
+                align-items:flex-end;
+                flex-basis: 35%;
+            }
+
+        }
+        .text__bg--instagram {
+            top: 10rem;
+            left: 0;
+        }
+        .socials__bg {
+            position: absolute;
+            z-index: -1;
+        }
+        .socials__bg--mint {
+            top: 0;
+            left: 0;
+        }
+        .socials__bg--long-mint {
+            top: 15rem;
+            right: 20rem;
+        }
+        .socials__bg--pink {
+            top: 0;
+            right: 0;
+        }
+
+    }
+
+    .container--footer__nav {
+        padding: 3rem 0 6rem;
+        margin-bottom: 0;
+        .footer__nav {
+            display: flex;
+
+
+        .footer__item {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 25%;
+
+            margin-top: 1.6rem;
+
+            text-transform: uppercase;
+            .footer__link,
+            .details {
+                margin-bottom: 1rem;
+
+                font-family: "OswaldBold";
+                font-size: 1.4rem;
+                letter-spacing: 0.056rem;
+                color: var(--mint-color);
+            }
+            .footer__additional-link,
+            .footer__text {
+                margin-bottom: 0.6rem;
+
+                font-family: "OswaldLight";
+                font-size: 1.2rem;
+                letter-spacing: 0.048rem;
+                color: var(--light-color);
+                opacity: 0.9;
+            }
+            .delivery__text--footer {
+                margin-bottom: 2rem;
+            }
+        }
+        }
+        .footer__item:nth-child(4) .footer__link {
+            margin-bottom: 2rem;
+        }
+        .footer__item:nth-child(4) {
+            margin-left: -2rem;
+
+        }
+        .footer__item:first-child {
+            padding: 0 1rem;
+            margin: 0 4rem 0 0;
+        }
+    }
+}

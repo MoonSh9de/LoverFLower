@@ -1,0 +1,72 @@
+.order {
+    margin-bottom: 6rem;
+    position: relative;
+    .order--container {
+        padding-bottom: 15rem;
+
+
+
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            width: 728px;
+            margin-left: auto;
+
+            border-right: 1px solid var(--pink-color);
+
+            .step__item {
+                width: 50%;
+                min-height: auto;
+
+                flex-basis: 250px;
+                margin: 4rem 11rem 0 0;
+
+
+                .step__title {
+                    margin-bottom: 1.2rem;
+
+                    font-family: "OswaldBold";
+                    text-transform: uppercase;
+                    font-size: 3rem;
+                    color: var(--pink-color);
+                }
+
+
+            }
+            .step__item:first-child:before
+            {
+                display: block;
+                content: "";
+
+                width: 65px;
+                height: 10px;
+
+                background-color: var(--pink-color);
+
+                margin-bottom: 5rem;
+            }
+
+            .step__item:nth-child(odd) {
+                margin-top: -2rem;
+            }
+
+        }
+
+        .lover_flower {
+            margin: 0 6rem 3rem 0;
+        }
+
+
+    }
+    .order__bouquet {
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+
+

@@ -1,0 +1,118 @@
+.questions {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/images/questions/bg_questions.png");
+
+    position: relative;
+    z-index: 1;
+    .container--questions {
+        display: flex;
+        justify-content: space-between;
+        .questions__title {
+            flex-basis: 70%;
+
+            .questions_title {
+                display: block;
+                margin-left: 9.5rem;
+            }
+        }
+        .questions__about {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 30%;
+
+            .questions__text {
+                margin-left: auto;
+                width: 300px;
+
+                margin-bottom: 3rem;
+
+                letter-spacing: 1px;
+            }
+            .questions__text::before {
+                display: block;
+                content: '';
+
+                width: 100%;
+                height: 1px;
+
+                margin: 8.2rem 0 5.3rem;
+                background-color: var(--mint-color);
+            }
+            .questions_form {
+
+                .questions_input {
+                    width: 445px;
+                    height: 60px;
+
+                    margin-bottom: 1rem;
+                    padding: 2rem;
+
+                    background: transparent;
+                    border: solid 1px #43ffd2;
+
+                    font-family: "OswaldRegular";
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    color: var(--green-color);
+
+                }
+                .questions_input:nth-child(3) {
+                    height: 120px;
+                    resize: none;
+
+                }
+
+
+            }
+
+
+            .btn__link--questions {
+                width: 255px;
+
+                margin: 2rem 0 1rem;
+
+            }
+            .questions__politics {
+                margin-bottom: 5.2rem;
+
+                text-transform: none;
+                font-size: 1rem;
+                letter-spacing: 0.02rem;
+
+                .link--questions {
+                    font-size: 1rem;
+                    text-transform: none;
+                    letter-spacing: 0.02rem;
+                }
+            }
+
+        }
+
+    }
+    .questions__bg {
+        position: absolute;
+    }
+    .questions__bg--foliage {
+        top: -10rem;
+        left: 0;
+        z-index: 1;
+    }
+    .questions__ellipse--pink {
+        top: -15rem;
+        left: 0;
+        z-index: -1;
+    }
+    .questions__ellipse--mint {
+        top: 0rem;
+        left: 15rem;
+        z-index: -1;
+    }
+    .questions__bg--questions {
+        top: 25rem;
+        left: 40rem;
+        z-index: -1;
+    }
+
+}
+

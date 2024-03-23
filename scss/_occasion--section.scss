@@ -1,0 +1,68 @@
+.container--occasion {
+    .occasion {
+        position: relative;
+        .occasion__title {
+            margin-bottom: 3rem;
+            .occasion__subtitle {
+                display: block;
+            }
+
+        }
+        .occasion__title--img {
+            position: absolute;
+            top:0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .occasion__subtitle::before {
+            display: inline-block;
+            content: '';
+
+            width: 255px;
+            height: 1px;
+
+            margin: 0 3rem 3rem 9.5rem;
+
+            background-color: var(--pink-color);
+            opacity: 0.5;
+
+        }
+        .occasion__about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 5rem;
+
+            position: relative;
+
+            .occasion__item {
+                flex-basis: 250px;
+
+                .occasion__text {
+                    margin-bottom: 2rem;
+                }
+            }
+            .occasion__list {
+                padding-left: 0;
+                .occasion__list-item {
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            .occasion__arrow {
+                flex: none;
+
+                position: absolute;
+                bottom: -5rem;
+                left: -3rem;
+                z-index: 1;
+            }
+        }
+
+
+
+
+    }
+}
